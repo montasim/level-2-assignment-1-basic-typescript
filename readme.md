@@ -31,13 +31,26 @@
 
 3. Can you give an example of how to use generics in TypeScript?
 
-   Answer:
+   Answer: Generic Types can easily create reusable functions, interfaces or classes instead of writing different types for each one. Generics allow to use different types of providing parameters to one reusable part of code.
+
+   <br/>
+
+   Example:
+
+   type GenericArray<T> = Array<T>;
+
+   const rollNumbers1: GenericArray<number> = [1, 2, 3, 4, 5];
+   const rollNumbers2: string[] = ['1', '2', '3', '4', '5'];
+   const rollNumbers3: GenericArray<boolean> = [true, false, false, true, false];
 
 <br/>
 
 4. What is the difference between an "unknown" and "any" type in TypeScript?
 
-   Answer:
+   Answer: Difference between an unknown and any type:
+
+   - Unknown doesn't allow being assigned to any type whereas any allows being assigned to any type.
+   - Unknown doesn't allow calling any method whereas any allows calling any method.
 
 <br/>
 
