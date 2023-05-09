@@ -76,7 +76,10 @@
 
 7. Can you explain how to use "type guards" with "in" and "typeof" operators in TypeScript?
 
-   Answer:
+   Answer: A type guard is a TypeScript technique used to get information about the type of a variable.
+
+   - The typeof operator is a built-in type guard in TypeScript that checks the type of a variable at runtime. When using this keyword in front of a variable name it returns a string that represents the type of that variable.
+   - The in operator can be used as a type guard to help narrow down the type of an object variable by its property name.It returns true if the specified property is in the specified object.
 
 <br/>
 <br/>
