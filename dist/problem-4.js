@@ -21,5 +21,3 @@ const person1 = new Person('Rahim Mia', 20);
 const student1 = new Student('Karim Mia', 18, 'A+');
 person1.getDetails();
 student1.getGrade();
-console.log(person1);
-console.log(student1);
