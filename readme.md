@@ -29,19 +29,19 @@
 
 <br/>
 
-3. Can you give an example of how to use generics in TypeScript?
+3.  Can you give an example of how to use generics in TypeScript?
 
-   Answer: Generic Types can easily create reusable functions, interfaces or classes instead of writing different types for each one. Generics allow to use different types of providing parameters to one reusable part of code.
+    Answer: Generic Types can easily create reusable functions, interfaces or classes instead of writing different types for each one. Generics allow to use different types of providing parameters to one reusable part of code.
 
-   <br/>
+    <br/>
 
-   Example:
+    Example:
 
-   type GenericArray<T> = Array<T>;
+         type GenericArray<T> = Array<T>;
 
-   const rollNumbers1: GenericArray<number> = [1, 2, 3, 4, 5];
-   const rollNumbers2: string[] = ['1', '2', '3', '4', '5'];
-   const rollNumbers3: GenericArray<boolean> = [true, false, false, true, false];
+         const rollNumbers1: GenericArray<number> = [1, 2, 3, 4, 5];
+         const rollNumbers2: string[] = ['1', '2', '3', '4', '5'];
+         const rollNumbers3: GenericArray<boolean> = [true, false, false, true, false];
 
 <br/>
 
@@ -54,17 +54,17 @@
 
 <br/>
 
-5. Can you give an example of how to use enums in TypeScript?
+5.  Can you give an example of how to use enums in TypeScript?
 
-   Answer: An enum is a special “class” that represents a group of constants (unchangeable variables). Enums allow a developer to define a set of named constants.
+    Answer: An enum is a special “class” that represents a group of constants (unchangeable variables). Enums allow a developer to define a set of named constants.
 
-   enum Gender {
-   male = 1,
-   female,
-   other
-   }
+         enum Gender {
+            male = 1,
+            female,
+            other
+         }
 
-   console.log(Gender.male); // logs 1
+         console.log(Gender.male); // logs 1
 
 <br/>
 
@@ -87,21 +87,41 @@
 
 ## Optional Questions:
 
-1. Can you explain what a "tuple" is in TypeScript?
+1.  Can you explain what a "tuple" is in TypeScript?
 
-   Answer:
+    Answer: A tuple is a typed array with a pre-defined length and types for each index. It is a new data type introduced by TypeScript. Unlike array, tuples can have values of different data types.
+
+    <br/>
+
+    Example:
+
+         var geek: [boolean, string] = [true, "Aayush"];
 
 <br/>
 
-2. Can you give an example of how to use "readonly" properties in TypeScript?
+2.  Can you give an example of how to use "readonly" properties in TypeScript?
 
-   Answer:
+    Answer: In this example, the name property of the Person class is marked as readonly, which means it can only be assigned during initialization or from within the constructor of the same class.
+
+         class Person {
+            public readonly name: string;
+
+            public constructor(name: string) {
+                this.name = name;
+            }
+         }
+         const person = new Person('Tim');
+
+         console.log(person.name); // Outputs: 'Tim'
 
 <br/>
 
-3. Can you give an example of how to use "conditional types" in TypeScript?
+3.  Can you give an example of how to use "conditional types" in TypeScript?
 
-   Answer:
+    Answer: When a type is dependent on another type it is called conditional types.
+
+        type a1 = string;
+        type a2 = a1 extends string ? string : null;
 
 <br/>
 <br/>
