@@ -56,13 +56,21 @@
 
 5. Can you give an example of how to use enums in TypeScript?
 
-   Answer:
+   Answer: An enum is a special “class” that represents a group of constants (unchangeable variables). Enums allow a developer to define a set of named constants.
+
+   enum Gender {
+   male = 1,
+   female,
+   other
+   }
+
+   console.log(Gender.male); // logs 1
 
 <br/>
 
 6. What is the "as" keyword used for in TypeScript?
 
-   Answer:
+   Answer: The as keyword in TypeScript is used to perform a type assertion. Type Assertion is the process when we tend to set a variable type as our own.
 
 <br/>
 
